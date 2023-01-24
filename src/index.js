@@ -4,7 +4,11 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 // Import Utilities
-
+import AboutUs from ("./components/utilities/AboutUs");
+import ContactUs from ("./components/utilities/ContactUs");
+import ErrorPage from ("./components/utilities/ErrorPage");
+import FetchForHomePage from ("./components/utilities/FetchForHomepage");
+import HomePage from ("./components/utilities/HomePage");
 
 // Import Pages
 
@@ -19,6 +23,14 @@ const router = createBrowserRouter ([
             {
                 index: true,
                 element: <HomePage />
+            },
+            {
+                index: "/aboutus",
+                element: <AboutUs />
+            },
+            {
+                index: "/contactus",
+                element: <ContactUs />
             }
         ]
     }
