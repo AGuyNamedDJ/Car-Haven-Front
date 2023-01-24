@@ -12,7 +12,15 @@ import { createRoot } from "react-dom/client";
 // Router
 const router = createBrowserRouter ([
     {
-
+        path: "/",
+        element: <FetchForHomePage />,
+        errorElement: <ErrorPage />,
+        children: [
+            {
+                index: true,
+                element: <HomePage />
+            }
+        ]
     }
 ])
 
