@@ -45,75 +45,75 @@ const router = createBrowserRouter ([
                 element: <HomePage />
             },
             {
-                index: "/aboutus",
+                path: "/aboutus",
                 element: <AboutUs />
             },
             {
-                index: "/contactus",
+                path: "/contactus",
                 element: <ContactUs />
             },
             {
-                index: "inventory/bentley",
+                path: "inventory/bentley",
                 element: <bentley />
             },
             {
-                index: "inventory/bentley/:carId",
+                path: "inventory/bentley/:carId",
                 element: <bentleyDetail />
             },
             {
-                index: "inventory/ferrari",
+                path: "inventory/ferrari",
                 element: <ferrari />
             },
             {
-                index: "inventory/ferrari/:carId",
+                path: "inventory/ferrari/:carId",
                 element: <ferrariDetail />
             },
             {
-                index: "inventory/koenigsegg",
+                path: "inventory/koenigsegg",
                 element: <koenigsegg />
             },
             {
-                index: "/inventory/koenigsegg/:carId",
+                path: "/inventory/koenigsegg/:carId",
                 element: <koenigseggDetail />
             },
             {
-                index: "/inventory/lamborghini",
+                path: "/inventory/lamborghini",
                 element: <lamborghini />
             },
             {
-                index: "/inventory/lamborghini/:carId",
+                path: "/inventory/lamborghini/:carId",
                 element: <lamborghiniDetail />
             },
             {
-                index: "/inventory/mclaren",
+                path: "/inventory/mclaren",
                 element: <mclaren />
             },
             {
-                index: "/inventory/mclaren/:carId",
+                path: "/inventory/mclaren/:carId",
                 element: <mclarenDetail />
             },
             {
-                index: "/newsandevents",
+                path: "/newsandevents",
                 element: <newsAndEvents />
             },
             {
-                index: "/inventory/porsche",
+                path: "/inventory/porsche",
                 element: <porsche />
             },
             {
-                index: "/inventory/porsche/:carId",
+                path: "/inventory/porsche/:carId",
                 element: <porscheDetail />
             },
             {
-                index: "/inventory/rollsroyce",
+                path: "/inventory/rollsroyce",
                 element: <rollsRoyce />
             },
             {
-                index: "/inventory/rollsroyce/:carId",
+                path: "/inventory/rollsroyce/:carId",
                 element: <ContactUs />
             },
             {
-                index: "/service",
+                path: "/service",
                 element: <serviceAndParts />
             }
         ]
