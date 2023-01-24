@@ -1,0 +1,28 @@
+{
+  "name": "car-haven-front",
+  "version": "1.0.0",
+  "description": "This is a car dealership website, where users can browse and learn about various luxury car manufacturers, models and their features. Built with a Node.js and Express.js backend, and a React.js frontend with Tailwind CSS for styling. The website allows users to view and filter through a catalog of cars, as well as create, read, update, and delete manufacturers, models, and car listings through a secure admin portal. The project also uses a PostgreSQL database to store and retrieve data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DJRobertson95/Car-Haven-Front.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DJRobertson95/Car-Haven-Front/issues"
+  },
+  "homepage": "/",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.7.0",
+    "react-router-dom": "^6.7.0",
+    "react-scripts": "^5.0.1"
+  }
+}
