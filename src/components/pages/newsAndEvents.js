@@ -2,7 +2,7 @@
 import React from "react";
 
 // Functional Component
-const NewsandEvents = () => {
+const NewsAndEvents = () => {
     return(
         <div>
             <p>Here is your News.</p>
@@ -11,6 +11,6 @@ const NewsandEvents = () => {
 };
 
 // Export
-export default NewsandEvents;
+export default NewsAndEvents;
 
 // Rememeber IDs(#) are more specific than Classes(.)
