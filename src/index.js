@@ -140,3 +140,7 @@ const router = createBrowserRouter ([
 const app = document.getElementById("apps")
 const root = createRoot(app)
 root.render(<RouterProvider router={router} />)
+
+// createRoot(document.getElementById("apps")).render(
+//     <RouterProvider router={router} />
+//   );
