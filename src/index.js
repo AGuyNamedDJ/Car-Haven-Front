@@ -18,7 +18,6 @@ import BugattiDetail from "./components/pages/Vehicles/BugattiDetail";
 import Financing from "./components/pages/Financing";
 import Ferrari from "./components/pages/Vehicles/Ferrari";
 import FerrariDetail from "./components/pages/Vehicles/FerrariDetail";
-import Inventory from "./components/pages/Inventory";
 import Koenigsegg from "./components/pages/Vehicles/Koenigsegg";
 import KoenigseggDetail from "./components/pages/Vehicles/KoenigseggDetail";
 import Lamborghini from "./components/pages/Vehicles/Lamborghini";
@@ -31,6 +30,7 @@ import PorscheDetail from "./components/pages/Vehicles/PorscheDetail";
 import RollsRoyce from "./components/pages/Vehicles/RollsRoyce";
 import RollsRoyceDetail from "./components/pages/Vehicles/RollsRoyceDetail";
 import ServiceAndParts from "./components/pages/ServiceAndParts";
+import Vehicles from "./components/pages/Vehicles";
 
 
 // Router
@@ -81,31 +81,31 @@ const router = createBrowserRouter ([
                 element: <Financing />
             },
             {
-                path: "inventory",
-                element: <Inventory />
+                path: "vehicles",
+                element: <Vehicles />
             },
             {
-                path: "inventory/koenigsegg",
+                path: "vehicles/koenigsegg",
                 element: <Koenigsegg />
             },
             {
-                path: "/inventory/koenigsegg/:carId",
+                path: "/vehicles/koenigsegg/:carId",
                 element: <KoenigseggDetail />
             },
             {
-                path: "/inventory/lamborghini",
+                path: "/vehicles/lamborghini",
                 element: <Lamborghini />
             },
             {
-                path: "/inventory/lamborghini/:carId",
+                path: "/vehicles/lamborghini/:carId",
                 element: <LamborghiniDetail />
             },
             {
-                path: "/inventory/mclaren",
+                path: "/vehicles/mclaren",
                 element: <Mclaren />
             },
             {
-                path: "/inventory/mclaren/:carId",
+                path: "/vehicles/mclaren/:carId",
                 element: <MclarenDetail />
             },
             {
@@ -113,19 +113,19 @@ const router = createBrowserRouter ([
                 element: <NewsAndEvents />
             },
             {
-                path: "/inventory/porsche",
+                path: "/vehicles/porsche",
                 element: <Porsche />
             },
             {
-                path: "/inventory/porsche/:carId",
+                path: "/vehicles/porsche/:carId",
                 element: <PorscheDetail />
             },
             {
-                path: "/inventory/rollsroyce",
+                path: "/vehicles/rollsroyce",
                 element: <RollsRoyce />
             },
             {
-                path: "/inventory/rollsroyce/:carId",
+                path: "/vehicles/rollsroyce/:carId",
                 element: <RollsRoyceDetail />
             },
             {

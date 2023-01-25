@@ -2,7 +2,7 @@
 import React from "react";
 
 // Functional Component
-const Inventory = () => {
+const Vehicles = () => {
     return(
         <div>
             <p>Here is your inve.</p>
@@ -11,6 +11,6 @@ const Inventory = () => {
 };
 
 // Export
-export default Inventory;
+export default Vehicles;
 
 // Rememeber IDs(#) are more specific than Classes(.)
