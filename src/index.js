@@ -15,7 +15,7 @@ import Bentley from "./components/pages/inventory/Bentley"
 import BentleyDetail from "./components/pages/inventory/BentleyDetail";
 import Bugatti from "./components/pages/inventory/Bugatti";
 import BugattiDetail from "./components/pages/inventory/BugattiDetail";
-// import Financing from "./components/pages/Financing";
+import Financing from "./components/pages/Financing";
 import Ferrari from "./components/pages/inventory/Ferrari";
 import FerrariDetail from "./components/pages/inventory/FerrariDetail";
 import Inventory from "./components/pages/Inventory";
@@ -76,10 +76,10 @@ const router = createBrowserRouter ([
                 path: "inventory/ferrari/:carId",
                 element: <FerrariDetail />
             },
-            // {
-            //     path: "financing",
-            //     element: <Financing />
-            // },
+            {
+                path: "financing",
+                element: <Financing />
+            },
             {
                 path: "inventory",
                 element: <Inventory />
