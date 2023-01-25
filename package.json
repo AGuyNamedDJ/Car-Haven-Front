@@ -21,9 +21,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router": "^6.7.0",
+    "react-router": "^6.7.000",
     "react-router-dom": "^6.7.0",
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^4.0.2"
   },
   "browserslist": {
     "production": [
