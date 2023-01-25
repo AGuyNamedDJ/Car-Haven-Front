@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/DJRobertson95/Car-Haven-Front/issues"
   },
-  "homepage": "http:///",
+  "homepage": "/",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
