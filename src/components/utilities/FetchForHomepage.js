@@ -222,11 +222,10 @@ const FetchForHomepage = () => {
     // Functional Component
     return (
         <div>
-
-            <Outlet context={contextObject} />
-            <div id="navbar-box">
+            <div>
                 <Navbar context={contextObject}/>
             </div>
+            <Outlet context={contextObject} />
         </div>
     )
 };

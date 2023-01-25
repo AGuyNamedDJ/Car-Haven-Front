@@ -1,3 +1,18 @@
 body{
-    background-color: tan;
+    background-color: black;
+    color: white;
+    font-size: 20px;
 }
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+#navbar-text{
+    color: white;
+    text-decoration: none;
+}
+
+
