@@ -7,6 +7,9 @@ const HomePage = () => {
         <div>
             <p id="homepage-title">Car Haven</p>
             <p id="homepage-subtitle">"Modern Car Market"</p>
+            <h1 className="text-2xl font-bold underline">
+      Hello world!
+    </h1>
         </div>
     )
 };

@@ -34,11 +34,12 @@ const FetchForHomepage = () => {
     useEffect(() => {
         async function fetchManufacturer () {
             try {
-                const response = await fetch ("https://github.com/DJRobertson95/Car-Haven-Back/api/manufacturer", {
+                const response = await fetch ("https://car-haven-back.onrender.com/api/manufacturer", {
                     headers: {
                         'Content-Type' : 'application/json'
                     }
                 })
+                console.log("Response", response)
                 const manufacturerData = await response.json();
                 console.log("Translated Manufacturer Data:", manufacturerData);
                 setInventory(manufacturerData);
