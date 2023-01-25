@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import { Outlet } from "react-router";
 
 // State
+
+const FetchForHomepage = () => {
     // Establish new state;
     const [inventory, setInventory] = useState([]);
     const [bentley, setBentley] = useState([]);
@@ -27,20 +29,36 @@ import { Outlet } from "react-router";
         rollsRoyceState: [rollsRoyce, setRollsRoyce]
     }
 
-    // useEffects
-        // fetchManufacturer
-        useEffect(() => {
-            async function fetchManufacturer () {
-                try {
-                    const response = await fetch ("https://github.com/DJRobertson95/Car-Haven-Back/api/manufacturer"), {
-                        headers: {
-                            'Content-Type' : 'application/json'
-                        }
-                    })
-                } catch (error) {
-                    console.log ("Error fetching Data!")
-                    console.log(error)
-                    
-                }
+// useEffects
+    // fetchManufacturer
+    useEffect(() => {
+        async function fetchManufacturer () {
+            try {
+                const response = await fetch ("https://github.com/DJRobertson95/Car-Haven-Back/api/manufacturer", {
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    }
+                })
+                const manufacturerData = await response.json();
+                console.log("Translated Manufacturer Data:", manufacturerData);
+                setInventory(manufacturerData);
+            } catch (error) {
+                console.log ("Error fetching Data!")
+                console.log(error)
             }
-        })
+        }
+        fetchManufacturer();
+    }, [])
+
+    // Functional Component
+    return (
+        <div>
+
+            <Outlet context={contextObject} />
+            <div id="navbar-box">
+                <Navbar context={contextObject}/>
+            </div>
+        </div>
+    )
+};
+export default FetchForHomepage;

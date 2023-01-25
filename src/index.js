@@ -4,33 +4,33 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 
 // Import Utilities
-import AboutUs from ("./components/utilities/AboutUs");
-import ContactUs from ("./components/utilities/ContactUs");
-import ErrorPage from ("./components/utilities/ErrorPage");
-import FetchForHomePage from ("./components/utilities/FetchForHomepage");
-import HomePage from ("./components/utilities/HomePage");
+import AboutUs from "./components/utilities/AboutUs";
+import ContactUs from "./components/utilities/ContactUs";
+import ErrorPage from "./components/utilities/ErrorPage";
+import FetchForHomePage from "./components/utilities/FetchForHomepage";
+import HomePage from "./components/utilities/HomePage";
 
 // Import Pages
-import bentley from ("./components/pages/inventory/bentley");
-import bentleyDetail from ("./components/pages/inventory/bentleyDetail");
-import bugatti from ("./components/pages/inventory/bugatti");
-import bugattiDetail from ("./components/pages/inventory/bugattiDetail");
-import financing from ("./components/pages/financing");
-import ferrari from ("./components/pages/inventory/ferrari");
-import ferrariDetail from ("./components/pages/inventory/ferrariDetail");
-import koenigsegg from ("./components/pages/inventory/koenigsegg");
-import koenigseggDetail from ("./components/pages/inventory/koenigseggDetail");
-import lamborghini from ("./components/pages/inventory/lamborghini");
-import lamborghiniDetail from ("./components/pages/inventory/lamborghiniDetail");
-import mclaren from ("./components/pages/inventory/mclaren");
-import mclarenDetail from ("./components/pages/inventory/mclarenDetail");
-import newsAndEvents from ("./components/pages/newsAndEvents");
-import porsche from ("./components/pages/inventory/porsche");
-import porscheDetail from ("./components/pages/inventory/porscheDetail");
-import rollsRoyce from ("./components/pages/inventory/rollsRoyce");
-import rollsRoyceDetail from ("./components/pages/inventory/rollsRoyceDetail");
-import serviceAndParts from ("./components/pages/serviceAndParts");
-
+import Bentley from "./components/pages/inventory/Bentley"
+import BentleyDetail from "./components/pages/inventory/BentleyDetail";
+import Bugatti from "./components/pages/inventory/Bugatti";
+import BugattiDetail from "./components/pages/inventory/BugattiDetail";
+import Financing from "./components/pages/Financing";
+import Ferrari from "./components/pages/inventory/Ferrari";
+import FerrariDetail from "./components/pages/inventory/FerrariDetail";
+import Inventory from "./components/pages/Inventory";
+import Koenigsegg from "./components/pages/inventory/Koenigsegg";
+import KoenigseggDetail from "./components/pages/inventory/KoenigseggDetail";
+import Lamborghini from "./components/pages/inventory/Lamborghini";
+import LamborghiniDetail from "./components/pages/inventory/LamborghiniDetail";
+import Mclaren from "./components/pages/inventory/McLaren";
+import MclarenDetail from "./components/pages/inventory/McLarenDetail";
+import NewsAndEvents from "./components/pages/NewsAndEvents";
+import Porsche from "./components/pages/inventory/Porsche";
+import PorscheDetail from "./components/pages/inventory/PorscheDetail";
+import RollsRoyce from "./components/pages/inventory/RollsRoyce";
+import RollsRoyceDetail from "./components/pages/inventory/RollsRoyceDetail";
+import ServiceAndParts from "./components/pages/ServiceAndParts";
 
 
 // Router
@@ -54,67 +54,83 @@ const router = createBrowserRouter ([
             },
             {
                 path: "inventory/bentley",
-                element: <bentley />
+                element: <Bentley />
             },
             {
                 path: "inventory/bentley/:carId",
-                element: <bentleyDetail />
+                element: <BentleyDetail />
+            },
+            {
+                path: "inventory/bugatti",
+                element: <Bugatti />
+            },
+            {
+                path: "inventory/bugatti/:carId",
+                element: <BugattiDetail />
             },
             {
                 path: "inventory/ferrari",
-                element: <ferrari />
+                element: <Ferrari />
             },
             {
                 path: "inventory/ferrari/:carId",
-                element: <ferrariDetail />
+                element: <FerrariDetail />
+            },
+            {
+                path: "financing",
+                element: <Financing />
+            },
+            {
+                path: "inventory",
+                element: <Inventory />
             },
             {
                 path: "inventory/koenigsegg",
-                element: <koenigsegg />
+                element: <Koenigsegg />
             },
             {
                 path: "/inventory/koenigsegg/:carId",
-                element: <koenigseggDetail />
+                element: <KoenigseggDetail />
             },
             {
                 path: "/inventory/lamborghini",
-                element: <lamborghini />
+                element: <Lamborghini />
             },
             {
                 path: "/inventory/lamborghini/:carId",
-                element: <lamborghiniDetail />
+                element: <LamborghiniDetail />
             },
             {
                 path: "/inventory/mclaren",
-                element: <mclaren />
+                element: <Mclaren />
             },
             {
                 path: "/inventory/mclaren/:carId",
-                element: <mclarenDetail />
+                element: <MclarenDetail />
             },
             {
                 path: "/newsandevents",
-                element: <newsAndEvents />
+                element: <NewsAndEvents />
             },
             {
                 path: "/inventory/porsche",
-                element: <porsche />
+                element: <Porsche />
             },
             {
                 path: "/inventory/porsche/:carId",
-                element: <porscheDetail />
+                element: <PorscheDetail />
             },
             {
                 path: "/inventory/rollsroyce",
-                element: <rollsRoyce />
+                element: <RollsRoyce />
             },
             {
                 path: "/inventory/rollsroyce/:carId",
-                element: <ContactUs />
+                element: <RollsRoyceDetail />
             },
             {
                 path: "/service",
-                element: <serviceAndParts />
+                element: <ServiceAndParts />
             }
         ]
     }
