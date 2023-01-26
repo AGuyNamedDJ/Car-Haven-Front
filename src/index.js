@@ -27,10 +27,10 @@ import MclarenDetail from "./components/pages/Vehicles/McLarenDetail";
 import NewsAndEvents from "./components/pages/NewsAndEvents";
 import Porsche from "./components/pages/Vehicles/Porsche";
 import PorscheDetail from "./components/pages/Vehicles/PorscheDetail";
-// import RollsRoyce from "./components/pages/Vehicles/RollsRoyce";
-// import RollsRoyceDetail from "./components/pages/Vehicles/RollsRoyceDetail";
-// import ServiceAndParts from "./components/pages/ServiceAndParts";
-// import Vehicles from "./components/pages/Vehicles";
+import RollsRoyce from "./components/pages/Vehicles/RollsRoyce";
+import RollsRoyceDetail from "./components/pages/Vehicles/RollsRoyceDetail";
+import ServiceAndParts from "./components/pages/ServiceAndParts";
+import Vehicles from "./components/pages/Vehicles";
 
 
 // Router
@@ -116,22 +116,22 @@ const router = createBrowserRouter([
                 path: "/vehicles/porsche/:carId",
                 element: <PorscheDetail />
             },
-            // {
-            //     path: "/vehicles/rollsroyce",
-            //     element: <RollsRoyce />
-            // },
-            // {
-            //     path: "/vehicles/rollsroyce/:carId",
-            //     element: <RollsRoyceDetail />
-            // },
-            // {
-            //     path: "/service",
-            //     element: <ServiceAndParts />
-            // },
-            // {
-            //     path: "vehicles",
-            //     element: <Vehicles />
-            // },
+            {
+                path: "/vehicles/rollsroyce",
+                element: <RollsRoyce />
+            },
+            {
+                path: "/vehicles/rollsroyce/:carId",
+                element: <RollsRoyceDetail />
+            },
+            {
+                path: "/service",
+                element: <ServiceAndParts />
+            },
+            {
+                path: "vehicles",
+                element: <Vehicles />
+            },
         ]
     }
 ])
